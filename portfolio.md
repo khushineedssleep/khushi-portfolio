@@ -5,7 +5,7 @@
 
 **Jump to:** [Projects](#featured-projects) · [Data Visualization Workshops](#data-visualization-workshops) · [Teaching Assistant](#teaching-assistant) · [Skills](#skills)
 
-> **Every project image below is clickable.** Click a static image (or the 🔗 link under it) to open the **live, interactive version** of the visualization.
+> **Every project linked below is live.** Click a static image (or the link under it) to open the **live, interactive version** of the visualization.
 
 ---
 
