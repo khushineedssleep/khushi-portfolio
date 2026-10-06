@@ -11,7 +11,7 @@
 
 ## About Me
 
-I build interactive maps, dashboards and web tools that turn large, messy datasets into something people can actually explore and use. I hold an MS in Computational Analysis and Public Policy from The University of Chicago, where I was one of three inaugural Data Visualization Fellows at the Centre for Digital Scholarship (UChicago Library).
+I am a Computer Science and Public Policy major, data scientist and data visualization analyst with hands-on experience in analyzing large-scale healthcare and education data, deploying Python and R data pipelines, and applying statistical modeling, and machine learning to make policy and business decisions. Fluent with Python, R and SQL, validating data quality, and translating analysis into insight for cross-functional stakeholders.
 
 Most of my work sits where healthcare, public policy and inequality meet. I've worked with claims-level Medicaid data (T-MSIS), county-level federal health funding, 130 years of university archives, and 25 years of business establishment records. In every case the job is the same: clean and model the data so it's trustworthy, then design a visual that a clinician, an administrator, a researcher or a member of the public can understand without reading the methods section first.
 
