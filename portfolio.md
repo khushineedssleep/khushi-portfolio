@@ -27,45 +27,45 @@ I'm also an artist, and I teach. I've run data visualization workshops for under
 **My role:** Built the data pipeline that keeps the map current
 
 [![The Impact Map: HHS grants, Medicaid enrollment and health facilities by county](federal-map.png)](https://theimpactproject.org/the-impact-map/)
-🔗 **[Open the interactive Impact Map →](INTERACTIVE_LINK_IMPACT_MAP)** *(clicking the image or this link takes you to the interactive version)*
+ **[Open the interactive Impact Map:]([INTERACTIVE_LINK_IMPACT_MAP](https://theimpactproject.org/the-impact-map/))** (clicking the image or this link takes you to the interactive version)
 
-The Impact Map is a national, county-level map of how federal policy changes reach local communities. The health layer joins **HHS grants and contracts (total and per capita), SAMHSA grants, Medicaid enrollment, county Medicaid coverage rates, HHS employees and HHS sites**, with point layers for mental health, public health, healthcare and federal facilities. Overlays for rural counties, Indigenous lands, majority non-white areas and poverty areas let users see who is most exposed.
+The Impact Map is a national, county-level interactive map of how federal policy changes reach local communities. The health layer joins **HHS grants and contracts (total and per capita), SAMHSA grants, Medicaid enrollment, county Medicaid coverage rates, HHS employees and HHS sites**, with point layers for mental health, public health, healthcare and federal facilities. Overlays for rural counties, Indigenous lands, majority non-white areas and poverty areas let users see who is most exposed.
 
-[![The Impact Map: federal workers and probationary workers by county](images/impact-map-federal-workers.png)](INTERACTIVE_LINK_IMPACT_MAP)
+[![The Impact Map: federal workers and probationary workers by county](impact-federal-map.png)](https://theimpactproject.org/the-impact-map/)
 *The federal workforce layer: total and probationary federal workers by state, county and congressional district, filterable by sector.*
 
 **What I built:** An ETL pipeline that scrapes news coverage and uses an LLM with carefully engineered prompts to pull structured JSON (funding amounts, locations and affected populations) out of **16,000+ unstructured news articles**. The extracted records are validated and loaded into the map's data layer, so the map stays up to date as policy changes happen instead of relying on manual entry.
 
 ---
 
-### 2. UChicago Dissertations Explorer (1893–2025)
+### 2. [UChicago Dissertations Explorer (1893–2025)](https://xjasminelu.github.io/uchicago-dissertations-viz/vis/)
 
-**Tools:** Python (pandas, spaCy NER, scikit-learn TF-IDF), network analysis, geospatial analysis, interactive web visualization
+**Tools:** Python (pandas, spaCy NER, scikit-learn), ArcGIS, shiny, FlowMap, JavaScript, D3, CSS, HTML
 **Team:** Data Visualization Fellowship 2025–26, with Jasmine Lu and Andrew McGallian
 
-[![UChicago Dissertation Explorer landing page](images/dissertations-home.png)](INTERACTIVE_LINK_DISSERTATIONS)
-🔗 **[Open the interactive Dissertations Explorer →](INTERACTIVE_LINK_DISSERTATIONS)** *(clicking the image or this link takes you to the interactive version)*
+[![UChicago Dissertation Explorer landing page](dissertations.png)](https://xjasminelu.github.io/uchicago-dissertations-viz/vis/)
+**[Open the interactive Dissertations Explorer:](https://xjasminelu.github.io/uchicago-dissertations-viz/vis/)** *(clicking the image or this link takes you to the interactive version)*
 
-An interactive portrait of **32,013 PhD dissertations across 132 years** at the University of Chicago. The platform asks three questions: how have dissertation topics and departments changed over time, where in the world have UChicago scholars focused their research, and what do advisor and committee networks reveal about academic lineage?
+An interactive explorer of **32,013 PhD dissertations across 132 years** at the University of Chicago. The platform asks three questions: how have dissertation topics and departments changed over time, where in the world have UChicago scholars focused their research, and what do advisor and committee networks reveal about academic lineage?
 
 **The data work behind it**
 - **Three messy sources, one dataset.** ProQuest only records departments after 2009, so we filled the gap with **22,993 records hand-compiled from 77 years of convocation programs** (1932–2009) and OCR-parsed HathiTrust catalogs (1893–1931).
-- **300+ raw department names → 44 canonical departments**, through explicit, documented lookup tables. Records that can't be placed reliably are marked UNKNOWN instead of being forced into the wrong category.
+- **300+ raw department names transformed 44 canonical departments**, through explicit, documented lookup tables. Records that can't be placed reliably are marked UNKNOWN instead of being forced into the wrong category.
 - **Record matching** on title + year, with prefix and surname fallbacks; only unambiguous matches are accepted.
 - **96.9% department and building coverage**, from a fully deterministic, reproducible pipeline. The cleaned 15-column CSV ships with a README, license and citation guidance.
 
 **Views**
 
-[![Keyword Similarity Ring](images/dissertations-similarity-ring.png)](INTERACTIVE_LINK_DISSERTATIONS)
+[![Keyword Similarity Ring](ring-network.png)]
 *Keyword Similarity Ring: all 44 departments in campus order, with chords weighted by TF-IDF cosine similarity. Hover a node to see its strongest connections.*
 
-[![Similarity network](images/dissertations-similarity-network.png)](INTERACTIVE_LINK_DISSERTATIONS)
+[![Similarity network](network-analysis.png)](INTERACTIVE_LINK_DISSERTATIONS)
 *Force-directed similarity network colored by academic division. Humanities departments cluster tightly; the sciences sit apart.*
 
-[![Network analysis of divisions and departments](images/dissertations-network.png)](INTERACTIVE_LINK_DISSERTATIONS)
+[![Network analysis of divisions and departments](network-dept.png)](INTERACTIVE_LINK_DISSERTATIONS)
 *Network Analysis: divisions, departments and their cross-disciplinary links. Click a division to see its departments and dissertation counts.*
 
-[![Dissertation search timeline for the word feminism](images/dissertations-search.png)](INTERACTIVE_LINK_DISSERTATIONS)
+[![Dissertation search timeline for the word feminism](explorer-timeline.png)](INTERACTIVE_LINK_DISSERTATIONS)
 *Dissertation Explorer: search any keyword and see when it first appears. "Feminism" shows up in 1974 and accelerates after 2000.*
 
 Other views include a **campus choropleth** (buildings colored by dissertation count, with a year slider and animated playback), a **global research map** built with spaCy NER and a 200+ entry place-name normalization table, and **department history timelines** with cited building histories.
@@ -77,8 +77,7 @@ Other views include a **campus choropleth** (buildings colored by dissertation c
 **Tools:** R, Python, ggplot2, Plotly, ArcGIS, geospatial analysis
 **Context:** Data Visualization Fellowship, Centre for Digital Scholarship · Political Economy and Race Lab (PEARL)
 
-[![American Fringe Economy Atlas landing page](images/fringe-atlas.png)](INTERACTIVE_LINK_FRINGE_ATLAS)
-🔗 **[Open the Interactive ZIP Atlas →](INTERACTIVE_LINK_FRINGE_ZIP_ATLAS)** · **[Open the National Service Maps →](INTERACTIVE_LINK_FRINGE_NATIONAL_MAPS)** *(each link takes you to the interactive version)*
+[![American Fringe Economy Atlas landing page](fringe-economy.png)](https://khushineedssleep.github.io/fringe-economy-atlas/)
 
 America's fringe economy (payday lenders, check cashers, title lenders and pawn shops) is a $78 billion industry, and it is not spread evenly. This atlas maps how alternative financial services have grown, shrunk and moved across American cities since the late 1990s. It joins historical business establishment records with ZIP-level demographic data to study how financial infrastructure lines up with race, income and urban inequality.
 
@@ -95,15 +94,6 @@ America's fringe economy (payday lenders, check cashers, title lenders and pawn 
 
 ![Service Usage by Race](Distribution_of_Fringe_economy_service_use_by_race.png)
 *Fringe economy service use by race. Black Americans report the highest use across every service type, with nearly 50% using check cashing and pawn shops.*
-
-![Chicago Geographic Analysis](Chicago%20City%20choropleth.png)
-*Bivariate choropleth of income, race and check-cashing services in Chicago.*
-
-![Regulatory Changes 2016](payday_lending_2016_coloured.png)
-![Regulatory Changes 2020](payday_lending_2020_coloured.png)
-*Payday lending regulation, 2016 vs. 2020: permissive states fell from 26 to 22, and 6 states moved to more restrictive policies.*
-
-*Black-and-white versions of the maps are available for colorblind readers.*
 </details>
 
 ---
@@ -147,9 +137,6 @@ The workshop starts with one of the most famous maps in public health: John Snow
 **[DATE]** · Centre for Digital Scholarship, Regenstein Library
 **Tools:** R, ggplot2, gganimate
 🎥 **[Watch the workshop recording →](GGANIMATE_VIDEO_LINK)** · 📂 **[Workshop materials →](GGANIMATE_REPO_LINK)**
-
-[![gganimate workshop title slide](images/gganimate-workshop-cover.png)](GGANIMATE_VIDEO_LINK)
-*Click the slide to watch the recording.*
 
 When should a chart move, and how do you make it move well? This workshop introduces the **grammar of animation** in gganimate:
 - **Transitions** (`transition_*()`): how data changes from frame to frame (states, time, reveal, layers, filter and more)
