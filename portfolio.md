@@ -1,7 +1,7 @@
 # Data Visualization Portfolio
 
 **Khushi Desai** · Data Visualization & Data Science
-[LinkedIn](https://www.linkedin.com/in/khushi-desai-39b3511b7) · [GitHub](https://github.com/khushineedssleep) · khushimdesai452@gmail.com
+[LinkedIn](https://www.linkedin.com/in/khushi-desai-39b3511b7) · [GitHub](https://github.com/khushineedssleep) · khushi@uchicago.edu
 
 **Jump to:** [Projects](#featured-projects) · [Data Visualization Workshops](#data-visualization-workshops) · [Teaching Assistant](#teaching-assistant) · [Skills](#skills)
 
