@@ -26,7 +26,7 @@ I'm also an artist, and I teach. I've run data visualization workshops for under
 **Tools:** Python, web scraping, LLM-based extraction (prompt-engineered JSON output), ETL
 **My role:** Built the data pipeline that keeps the map current
 
-[![The Impact Map: HHS grants, Medicaid enrollment and health facilities by county](images/impact-map-hhs.png)](INTERACTIVE_LINK_IMPACT_MAP)
+[![The Impact Map: HHS grants, Medicaid enrollment and health facilities by county](federal-map.png)](https://theimpactproject.org/the-impact-map/)
 🔗 **[Open the interactive Impact Map →](INTERACTIVE_LINK_IMPACT_MAP)** *(clicking the image or this link takes you to the interactive version)*
 
 The Impact Map is a national, county-level map of how federal policy changes reach local communities. The health layer joins **HHS grants and contracts (total and per capita), SAMHSA grants, Medicaid enrollment, county Medicaid coverage rates, HHS employees and HHS sites**, with point layers for mental health, public health, healthcare and federal facilities. Overlays for rural counties, Indigenous lands, majority non-white areas and poverty areas let users see who is most exposed.
